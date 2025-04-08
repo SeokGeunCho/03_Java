@@ -4,20 +4,35 @@ import java.io.File;
 import java.io.IOException;
 
 public class Application {
+<<<<<<< HEAD
     public static void main(String[] args) {
         /*
          * JDK 1.0부터 지원하는 API로 파일 처리를 수행하는 대표적인 클래스
          **/
+=======
+
+    public static void main(String[] args) {
+        /*
+        * JDK 1.0부터 지원하는 API로 파일 처리를 수행하는 대표적인 클래스
+        * */
+>>>>>>> 8fd74888d272c5ced308c33effab1c9ef54e64d7
 
         File file = new File("src/main/java/com/ohgiraffers/section01/file/test.txt");
 
         try {
             // 파일 생성 후 성공/실패 여부를 boolean 으로 리턴(생성되면 true)
             boolean createSuccess = file.createNewFile();
+<<<<<<< HEAD
 
             // 최초 실행하면 새롭게 파일이 만들어지기 때문에 true를 반환한다.
             // 파일이 한 번 생성되고 난 이후는 새롭게 파일을 만들지 않기 때문에 false를 반환
             System.out.println("createNewFile: " + createSuccess);
+=======
+            
+            // 최초 실행하면 새롭게 파일이 만들어지기 때문에 true를 반환한다.
+            // 파일이 한 번 생성되고 난 이후는 새롭게 파일을 만들지 않기 때문에 false를 반환
+            System.out.println("createSuccess = " + createSuccess);
+>>>>>>> 8fd74888d272c5ced308c33effab1c9ef54e64d7
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -28,16 +43,26 @@ public class Application {
         System.out.println("파일의 절대경로 : " + file.getAbsolutePath());
 
         String path = "c:\\devTest\\test";
+<<<<<<< HEAD
         File filepath = new File(path);
 
         boolean mkdir = filepath.mkdirs();
         System.out.println("mkdir: " + mkdir);
 
         boolean deleteSuccess = filepath.delete();
+=======
+        File filePath = new File(path);
+        
+        boolean mkdir = filePath.mkdirs();
+        System.out.println("mkdir = " + mkdir);
+        
+        boolean deleteSuccess = filePath.delete();
+>>>>>>> 8fd74888d272c5ced308c33effab1c9ef54e64d7
         System.out.println("deleteSuccess = " + deleteSuccess);
 
         boolean deleteSuccess2 = new File("c:\\devTest").delete();
         System.out.println("deleteSuccess2 = " + deleteSuccess2);
+<<<<<<< HEAD
 
         boolean deleteSuccess3 = file.delete();
         System.out.println("deleteSuccess3 = " + deleteSuccess3);
@@ -46,5 +71,16 @@ public class Application {
         System.out.println("filePath.exists() : " + filepath.exists());
 
 
+=======
+        
+        boolean deleteSuccess3 = file.delete();
+        System.out.println("deleteSuccess3 = " + deleteSuccess3);
+
+        // 폴더의 생성여부를 exists() 메소드를 이용해서 판별
+        System.out.println("filePath.exists() : " + filePath.exists());
+        
+
+        
+>>>>>>> 8fd74888d272c5ced308c33effab1c9ef54e64d7
     }
 }
