@@ -1,3 +1,19 @@
+<<<<<<< HEAD
+/* package com.ohgiraffers.section02;
+
+public class Application1 {
+    public static void main(String[] args) {
+        ExceptionTest et = new ExceptionTest();
+        try {
+            et.checkEnoughMoney(-50000, 50000);
+              et.checkEnoughMoney(50000, -50000);
+       } catch (Exception e) {
+           e.printStackTrace();
+        }
+        System.out.println("프로그램을 종료합니다");
+    }
+}                               */
+=======
 package com.ohgiraffers.section02;
 
 public class Application1 {
@@ -17,3 +33,4 @@ public class Application1 {
         System.out.println("프로그램을 종료합니다.");
     }
 }
+>>>>>>> 8fd74888d272c5ced308c33effab1c9ef54e64d7
