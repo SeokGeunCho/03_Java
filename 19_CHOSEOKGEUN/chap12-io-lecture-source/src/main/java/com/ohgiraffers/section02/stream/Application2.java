@@ -1,21 +1,18 @@
-<<<<<<< HEAD
-/* package com.ohgiraffers.section02.stream;
+
+ package com.ohgiraffers.section02.stream;
 
 import java.io.FileInputStream;
-=======
+
 package com.ohgiraffers.section02.stream;
 
 import java.io.File;
->>>>>>> 8fd74888d272c5ced308c33effab1c9ef54e64d7
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
 public class Application2 {
-<<<<<<< HEAD
-=======
 
->>>>>>> 8fd74888d272c5ced308c33effab1c9ef54e64d7
+
     public static void main(String[] args) {
         /*
          * FileReader
@@ -23,8 +20,7 @@ public class Application2 {
          * 단, byte단위가 아닌 character 단위로 읽어들이는 부분이 차이점이다.
          * 따라서 2바이트이던 3바이트이던 글자단위로 읽어오기 때문에 한글을 정상적으로 읽어올 수 있다.
          * */
-<<<<<<< HEAD
-/*
+
 
         try(FileReader  fr = new FileReader( "src/main/java/com/ohgiraffers/section02/stream/testReader.txt");
 
@@ -34,10 +30,9 @@ public class Application2 {
                 System.out.println((char) value);
             }
 
-=======
 
         try (FileReader fr = new FileReader("src/main/java/com/ohgiraffers/section02/stream/testReader.txt");) {
-//            int value;
+           int value;
 
 //            while((value = fr.read()) != -1) {
 //                System.out.print((char) value);
@@ -64,9 +59,5 @@ public class Application2 {
     }
     }
 }
-*/
-=======
-        }
-    }
-}
->>>>>>> 8fd74888d272c5ced308c33effab1c9ef54e64d7
+
+
