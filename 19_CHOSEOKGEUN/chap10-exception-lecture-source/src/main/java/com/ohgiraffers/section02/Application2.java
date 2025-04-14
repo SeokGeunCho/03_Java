@@ -1,11 +1,5 @@
 package com.ohgiraffers.section02;
 
-<<<<<<< HEAD
-public class Application2 {
-    public static void main(String[] args) {
-        ExceptionTest et = new ExceptionTest();
-        et.checkEnoughMoney(20000, -30000);
-=======
 import com.ohgiraffers.section02.userexception.MoneyNegativeException;
 import com.ohgiraffers.section02.userexception.NotEnoungMoneyException;
 import com.ohgiraffers.section02.userexception.PriceNegativeException;
@@ -36,6 +30,5 @@ public class Application2 {
             System.out.println("finally 블럭의 내용이 동작함");
         }
         System.out.println("프로그램을 종료합니다.");
->>>>>>> 8fd74888d272c5ced308c33effab1c9ef54e64d7
     }
 }

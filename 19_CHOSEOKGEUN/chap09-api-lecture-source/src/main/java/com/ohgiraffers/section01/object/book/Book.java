@@ -1,10 +1,7 @@
 package com.ohgiraffers.section01.object.book;
 
-<<<<<<< HEAD
-=======
 import java.util.Objects;
 
->>>>>>> 8fd74888d272c5ced308c33effab1c9ef54e64d7
 public class Book {
 
     private int number;
@@ -15,11 +12,7 @@ public class Book {
     // 기본생성자
     public Book() {
     }
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> 8fd74888d272c5ced308c33effab1c9ef54e64d7
     // 모든 필드를 초기화하는 생성자
     public Book(int number, String title, String author, int price) {
         this.number = number;
@@ -61,10 +54,6 @@ public class Book {
     }
 
     // 1. toString 오버라이딩
-<<<<<<< HEAD
-
-=======
->>>>>>> 8fd74888d272c5ced308c33effab1c9ef54e64d7
     @Override
     public String toString() {
         return "[" +
@@ -74,8 +63,6 @@ public class Book {
                 ", price=" + price +
                 ']';
     }
-<<<<<<< HEAD
-=======
 
 
     // 2. equals() 오버라이딩
@@ -146,5 +133,4 @@ public class Book {
 
 
 
->>>>>>> 8fd74888d272c5ced308c33effab1c9ef54e64d7
 }

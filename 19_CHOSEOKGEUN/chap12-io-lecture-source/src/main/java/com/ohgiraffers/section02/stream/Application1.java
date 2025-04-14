@@ -34,30 +34,21 @@ public class Application1 {
          *  InputStream/OuputStream/Reader/Writer를 빼고 남은 단어가 바로 외부 데이터의 타입이다.
          *  예) FileInputStream은 InputStream을 제거하고 남은 단어가 File이므로 외부 데이터는 File임을 알 수 있다.
          * */
-
         FileInputStream fin = null;
 
         try {
             fin = new FileInputStream("src/main/java/com/ohgiraffers/section02/stream/testInputStream.txt");
 
             int value;
-
-            // read(): 파일에 기획된 값을 순차적으로 읽어오고 더 이상 읽어올 데이터가 없는 경우 -1을 반환
-       //    while ((value= fin.read()) != -1){
-       //        System.out.println(value);
-       //    }
-
             // read() : 파일에 기록된 값을 순차적으로 읽어오고 더 이상 읽어올 데이터가 없는 경우 -1을 반환
 //            while((value = fin.read()) != -1){
 //                System.out.println((char) value);
 //            }
-
             System.out.println("파일의 길이 : " + new File("src/main/java/com/ohgiraffers/section02/stream/testInputStream.txt").length());
             int size = (int) new File("src/main/java/com/ohgiraffers/section02/stream/testInputStream.txt").length();
             byte[] bytes = new byte[size];
 
             fin.read(bytes);
-
 
             for (int i = 0; i < bytes.length; i++) {
                 System.out.println((char) bytes[i]);
@@ -65,7 +56,6 @@ public class Application1 {
 
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
-
         } catch (IOException e) {
             throw new RuntimeException(e);
         } finally {
